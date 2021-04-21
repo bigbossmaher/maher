@@ -1,0 +1,13 @@
+header h1 , .course h2 , .movie h2 , .mood h2 , .Neighbors h2{
+    color: cadetblue;
+    font-family: 'Arial Narrow';
+}
+
+body{
+    font-family: Arial, 'Times New Roman';
+    background-color:darkkhaki;
+    color: darkorchid;
+}
+footer {
+    text-align: center;
+}
