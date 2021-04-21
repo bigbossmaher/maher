@@ -11,3 +11,17 @@ body{
 footer {
     text-align: center;
 }
+a {
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+p::first-letter {
+    initial-letter: 1.5;
+  }
+
+  .Title{
+      color: yellow;
+  }
