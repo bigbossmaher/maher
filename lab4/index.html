@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration page - lab4</title>
+</head>
+<body>
+    <div class="WorkshopReg">Workshop Registration</div>
+    <div>Register now while seat are availble</div>
+    <form action="" class="grid-container">
+        <div class="part1">
+            <label for="firstname">First Name</label> 
+            <input name="firstname" type="text" required /><br>
+            <label for="lastname">Last Name</label> 
+            <input name="lastname" type="text" required /><br>
+            <label for="Company">Company/Institution</label> 
+            <input name="company" type="text" required /><br>
+            <label for="address">address</label> 
+            <textarea name="address" id="" cols="30" rows="10" required></textarea><br>
+            <label for="city">City</label>
+            <input name="city" type="text" /><br>
+            <label for="state">State / Province / Region</label>
+            <select name="state">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Colorado">Colorado</option>
+            </select><br>
+
+            <label for="country">Country</label>
+            <select name="country">
+                <option value="tunisia">tunisia</option>
+                <option value="United States">United States</option>
+            </select>
+
+            <label for="email">Email</label> 
+            <input name="email" type="text" required /><br>
+            <label for="phonenumber">Phone number</label> 
+            <input name="phonenumber" type="text" required /><br>
+            </div>
+        <div class="part2">
+            <label for="Mealpreference">Meal preference</label>
+            <select name="Mealpreference">
+                <option value="Vegeterian">Vegeterian</option>
+                <option value="noVegeterian">no Vegeterian</option>
+              </select><br>
+    
+              <input type="checkbox" name="cash" value="cash">
+              <label for="cash"> Cash</label><br>
+              <input type="checkbox" name="Cheque" value="Cheque">
+              <label for="Cheque"> Cheque</label><br>
+              <input type="checkbox" name="Demand Draft" value="Demand Draft">
+              <label for="Demand Draft"> Demand Draft</label><br>
+    
+    
+              <label for="ddchequeno">DD/Cheque No.</label> 
+            <input name="ddchequeno" type="text" /><br>
+            <label for="Drawn on">Drawn on( Bank Name )</label> 
+            <input name="Drawn on" type="text" /><br>
+    
+            <label for="Payable At">Payable At</label> 
+            <input name="Payable At" type="text" /><br>
+        </div>
+
+        
+
+       
+
+
+        <div class="footer">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.WorkshopReg{
+    background-color: aqua;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "part1 part1 part2 part2"
+      "footer footer footer footer"
+      ". . . .";
+  }
+  
+  .part1 { grid-area: part1; }
+  
+  .part2 { grid-area: part2; }
+  
+  .footer { grid-area: footer; }
+  
