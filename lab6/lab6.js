@@ -1,9 +1,9 @@
+// ex  2
 var i=0;
 var intervalID;
     
 function printAndIncrement()
 {
-    // Stop interval procedure when "var i" reach to 100.
 
     if (i > 100)
     {
