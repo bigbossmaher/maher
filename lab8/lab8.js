@@ -29,3 +29,73 @@ let  average = students.reduce(
   0
 );
 console.log(result);
+
+
+
+
+
+//Q4
+
+
+function LinkedList(){
+  this.length = 0;
+  this.head = null;
+  this.tail = null;
+}
+function Node(value) {
+  return {
+    value: value,
+    next: null
+  }
+}
+
+LinkedList.prototype.add = function(val){
+  if(this.head == null){this.head = Node(val);this.tail = this.head;this.length++;}
+  else{
+    this.tail.next=Node(val);
+    this.tail = this.tail.next;
+    }
+}
+
+LinkedList.prototype.print = function(){
+  current = this.head;
+  while(current){
+    console.log(current.value);
+    current = current.next;
+
+  }
+  
+  
+}
+
+
+LinkedList.prototype.remove = function (val) {
+
+    if (this.head.data == val) {
+        this.head = this.head.next;
+    } else {
+        var previousNode = this.head;
+        var currentNode = previousNode.next;
+        while (currentNode) {
+            if (currentNode.data == val) {
+                previousNode.next = currentNode.next;
+                currentNode = currentNode.next;
+                break;
+            } else {
+                previousNode = currentNode;
+                currentNode = currentNode.next;
+            }
+        }
+    }
+};
+
+let linkedlist = new LinkedList();
+linkedlist.add(1);
+linkedlist.add(2);
+linkedlist.add(3);
+linkedlist.print();
+linkedlist.remove(2);
+linkedlist.print();
+
+
+
